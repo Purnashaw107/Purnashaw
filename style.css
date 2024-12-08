@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Background and Container */
+body {
+    background-image: url('DSC_0665.JPG'); /* Set your background image here */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.375); /* Semi-transparent background for text readability */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Profile Section */
+.profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo img {
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
+    margin-bottom: 15px;
+    border: 2px solid #fff;
+}
+
+.info h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color:antiquewhite;
+}
+
+.info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Biodata Section */
+.biodata {
+    width: 100%;
+}
+
+.biodata h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #ffc107;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+td {
+    padding: 8px;
+    font-size: 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+    width: 40%;
+    color: aqua;
+}
+.footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    color:blue;
+
+/* Responsive Design for Mobile */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .profile {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    .info h3 {
+        font-size: 14px;
+    }
+
+    .biodata h2 {
+        font-size: 18px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td {
+        padding: 10px;
+    }
+}
+
+
